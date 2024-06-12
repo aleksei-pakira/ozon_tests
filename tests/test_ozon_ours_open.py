@@ -1,0 +1,26 @@
+from allure_commons.types import Severity
+import allure
+
+from ozon_test_project.pages.ozon_travel_open import ozon_main_page
+@allure.feature('Open ozon travel tab')
+@allure.story('User should be able to open ozon tour tab')
+@allure.label('owner', 'aleksei-pakira')
+@allure.severity(Severity.BLOCKER)
+@allure.title('"ozon tour tab" should be displayed')
+@allure.link('https://ozon.ru/travel', name='ozon')
+def test_open_ozon_tour_page():
+    with allure.step('открыть главную страницу'):
+        ozon_main_page.open_main_page()
+
+    with allure.step('открыть ozon travel'):
+        ozon_main_page.open_ozon_travel_page()
+
+    with allure.step('открыть Поиск туров'):
+        ozon_main_page.open_tours_page()
+
+    with allure.step('Проверить заголовок "Поиск туров" вкладки'):
+        ozon_main_page.check_tours_title()
+
+
+
+
