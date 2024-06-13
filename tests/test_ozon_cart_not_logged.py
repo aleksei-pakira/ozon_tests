@@ -7,12 +7,11 @@ from ozon_test_project.pages.ozon_cart_not_logged import cart_not_logged
 @allure.label('owner', 'aleksei-pakira')
 @allure.severity(Severity.BLOCKER)
 @allure.title('"ozon tour tab" should be displayed')
-@allure.link('https://ozon.ru/travel', name='ozon')
 def test_add_to_cart_not_logged():
     with allure.step('открыть главную страницу'):
         cart_not_logged.open_main_page()
 
-    with allure.step('проверить,что количестово товаров в коазине = 0'):
+    with allure.step('проверить,что количестово товаров в корзине = 0'):
         cart_not_logged.check_items_quantity_in_cart()
 
     with allure.step('страница продукта'):
