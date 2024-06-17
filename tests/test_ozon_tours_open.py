@@ -17,8 +17,8 @@ def test_open_ozon_tour_page():
     with allure.step('открыть Поиск туров'):
         ozon_main_page.open_tours_page()
 
-#    with allure.step('Проверить заголовок "Поиск туров" вкладки'):
- #       ozon_main_page.check_tours_title()
+    with allure.step('Проверить заголовок "Поиск туров" вкладки'):
+        ozon_main_page.check_tours_title()
 
 
 
