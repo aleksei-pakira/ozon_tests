@@ -4,7 +4,7 @@ from selene import browser, by, have
 class TravelPage:
     def open_main_page(self):
         browser.open('/')
-        browser.open('/')
+#        browser.open('/')
 
     def open_ozon_travel_page(self):
         browser.element(by.link_text('Билеты, отели, туры')).click()
