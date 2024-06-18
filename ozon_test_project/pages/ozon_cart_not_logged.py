@@ -1,4 +1,5 @@
-from selene import browser, by, have, be
+import time
+from selene import browser, by, have
 
 
 class CartNotLogged:
@@ -14,6 +15,9 @@ class CartNotLogged:
 
     def add_product_to_card(self):
         browser.element("//button[contains(., 'Добавить в корзину')]").click()
+        time.sleep(5)
+
+
 #        browser.wait.until(lambda: browser.element(by.css('a[href*="cart"]')).text == '1')
  #       browser.element(by.css('a[href*="cart"]')).should(have.text("1")).should(be.visible, timeout=5)
         #browser.wait.until(browser.element('//div[@id="myDiv"]').is_visible, timeout=10)
