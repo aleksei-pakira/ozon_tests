@@ -14,7 +14,7 @@ class CartNotLogged:
 
     def add_product_to_card(self):
         browser.element("//button[contains(., 'Добавить в корзину')]").click()
-        browser.wait.until(lambda: browser.element(by.css('a[href*="cart"]')).text == '1', timeout=5)
+        browser.wait.until(lambda: browser.element(by.css('a[href*="cart"]')).text == '1')
  #       browser.element(by.css('a[href*="cart"]')).should(have.text("1")).should(be.visible, timeout=5)
         #browser.wait.until(browser.element('//div[@id="myDiv"]').is_visible, timeout=10)
 
