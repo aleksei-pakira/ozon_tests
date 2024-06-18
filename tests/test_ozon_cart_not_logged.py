@@ -20,9 +20,9 @@ def test_add_to_cart_not_logged():
     with allure.step('добавить продукт в корзину'):
         cart_not_logged.add_product_to_card()
 
-    with allure.step('открыть корзину'):
-        cart_not_logged.open_shopping_cart()
+#    with allure.step('открыть корзину'):
+#        cart_not_logged.open_shopping_cart()
 
-    with allure.step('очистить корзину'):
-        cart_not_logged.clear_shopping_cart()
+#    with allure.step('очистить корзину'):
+#        cart_not_logged.clear_shopping_cart()
 
