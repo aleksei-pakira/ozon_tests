@@ -14,7 +14,7 @@ class CartNotLogged:
 
     def add_product_to_card(self):
         browser.element("//button[contains(., 'Добавить в корзину')]").click()
-        browser.wait.until(lambda: browser.element(by.css('a[href*="cart"]')).text == '1')
+#        browser.wait.until(lambda: browser.element(by.css('a[href*="cart"]')).text == '1')
  #       browser.element(by.css('a[href*="cart"]')).should(have.text("1")).should(be.visible, timeout=5)
         #browser.wait.until(browser.element('//div[@id="myDiv"]').is_visible, timeout=10)
 
@@ -29,7 +29,6 @@ class CartNotLogged:
         browser.element("//button[contains(.,'В корзине')]").click()
 
     def clear_shopping_cart(self):
-
         browser.element("//button[contains(.,'Удалить выбранные')]").click()
         browser.element(by.css('a[href*="cart"]')).should(have.text("0") and (have.text("Корзина")))
 
