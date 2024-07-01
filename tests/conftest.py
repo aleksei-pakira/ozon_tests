@@ -50,7 +50,7 @@ from utils import attach
 #     attach.add_video(browser)
 #
 #     browser.quit()
-
+# Remote test impossible because ozon sees it as vpn
 
 
 @pytest.fixture(scope='function', autouse=True)
