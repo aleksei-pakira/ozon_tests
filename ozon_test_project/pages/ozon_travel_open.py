@@ -12,7 +12,6 @@ class TravelPage:
         browser.element(by.link_text('Билеты, отели, туры')).click()
 #        browser.element(by.partial_link_text("Билеты, отели, туры")).perform(command.js.click)
 #        browser.element("//a[contains(text(), 'Билеты, отели, туры')]/..").click()
-        time.sleep(5)
 
     def open_tours_page(self):
         browser.element("//span[contains(text(), 'Туры')]/../..").click()       #/../.. - parent/parent
