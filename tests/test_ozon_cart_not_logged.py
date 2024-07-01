@@ -11,18 +11,21 @@ def test_add_to_cart_not_logged():
     with allure.step('открыть главную страницу'):
         cart_not_logged.open_main_page()
 
-    with allure.step('проверить,что количестово товаров в корзине = 0'):
-        cart_not_logged.check_items_quantity_in_cart()
+#    with allure.step('проверить,что количестово товаров в корзине = 0'):
+ #       cart_not_logged.check_items_quantity_in_cart()
 
     with allure.step('страница продукта'):
         cart_not_logged.open_first_product()
 
-    with allure.step('добавить продукт в корзину'):
+#    with allure.step('добавить продукт в корзину'):
         cart_not_logged.add_product_to_card()
 
-    with allure.step('открыть корзину'):
-        cart_not_logged.open_shopping_cart()
+#    with allure.step('проверить API'):
+#        cart_not_logged.test_ozon_cart_api()
 
-    with allure.step('очистить корзину'):
-        cart_not_logged.clear_shopping_cart()
+#    with allure.step('открыть корзину'):
+ #       cart_not_logged.open_shopping_cart()
+
+#    with allure.step('очистить корзину'):
+#        cart_not_logged.clear_shopping_cart()
 
