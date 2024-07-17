@@ -61,9 +61,9 @@ def browser_settings(request):
 #     browser.config.driver_options = driver_options
 #     browser.config.window_height = 1920
 #     browser.config.window_width = 1080
-
-    yield
-
-    browser.quit()
+#
+#     yield
+#
+#     browser.quit()
 
 
