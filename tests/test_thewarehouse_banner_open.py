@@ -7,7 +7,7 @@ from ozon_test_project.pages.thewarehouse_banner_open import thewarehouse_main_p
 @allure.label('owner', 'aleksei-pakira')
 @allure.severity(Severity.BLOCKER)
 @allure.title('"ozon tour tab" should be displayed')
-def test_open_ozon_tour_page():
+def test_open_thewarehouse_banner_page():
     with allure.step('открыть главную страницу'):
         thewarehouse_main_page.open_main_page()
 
