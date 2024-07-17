@@ -14,7 +14,4 @@ def test_api():
 
     assert response.status_code == 201
 
-def test_status_code():
-    response1 = requests.request("POST", url)
-    assert response1.status_code == 201, f"Expected status code 200, but got {response1.status_code}"
 

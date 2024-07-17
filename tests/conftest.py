@@ -55,7 +55,7 @@ from utils import attach
 
 @pytest.fixture(scope='function', autouse=True)
 def browser_management():
-    browser.config.base_url = 'https://www.ozon.ru/'
+    browser.config.base_url = 'https://www.thewarehouse.co.nz/'
     driver_options = webdriver.ChromeOptions()
 #    driver_options.add_argument('--headless')
     browser.config.driver_options = driver_options
